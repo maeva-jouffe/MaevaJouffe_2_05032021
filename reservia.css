@@ -1,0 +1,226 @@
+header
+{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+
+header img
+{
+    width:95px;
+}
+
+p, h2
+{
+    margin: 0.5em;
+}
+
+nav
+{
+    display:flex;
+    right: 30px;
+    top: 30px;
+    position:absolute;  
+}
+
+nav a
+{
+    padding-top: 25px;
+}
+
+nav a:hover
+{
+    color:#0065FC;
+    border-top: 2px solid #0065FC ;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 70px;
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+h1
+{
+    font-size:1.3em;
+}
+
+#filtres ul
+{
+    display: flex;
+}
+
+#filtres li
+{
+    margin-right: 40px;
+    padding-right:10px;
+    list-style-type: none;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+#filtres i
+{
+    background-color: #DEEBFF;
+    border: 7px solid #DEEBFF;
+    border-radius: 25px;
+    height: 19px;
+    color: #0065FC;
+}
+
+#filtres
+{
+    display:flex;
+    vertical-align: middle;
+}
+
+#position
+{
+    background-color: #F2F2F2;
+    border: 7px solid #F2F2F2;
+    border-radius: 7px 0px 0px 7px;
+    height: 19px;
+
+}
+
+#rechercher
+{
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 7px 7px 0px;
+    height: 30px;
+}
+
+#champ
+{
+    height: 30px;
+    width: 200px;
+}
+
+#info
+{
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 40px;
+    padding: 10px 15px 10px 15px;
+}
+
+#hebergements
+{
+    display: flex;
+}
+
+#hebergements p, #hebergements h2
+{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+#hebergement_marseille
+{
+    background-color: #F2F2F2;
+    width: 750px;
+    height: 540px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+#auberge_cannebiere img, #hotel_port img, #hotel_mouettes img, #hotel_mer img, #auberge_panier img, #hotel_amina img
+{
+    width: 200px;
+    height: 100px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 5px 5px 2px 5px;
+    
+}
+
+#auberge_cannebiere, #hotel_port, #hotel_mouettes, #hotel_mer, #auberge_panier, #hotel_amina
+{
+    width: 210px;
+    height: 200px;
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 0.8em;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+#ligne1_hebergement
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#ligne2_hebergement
+{
+    display: flex;
+}
+
+#hebergement_marseille i
+{
+    color: #0065FC;
+}
+
+#populaires
+{
+    background-color: #F2F2F2;
+    width: 550px;
+    height: 540px;
+    border-radius: 10px;
+    margin-left: 35px;
+  
+    position: relative;
+    
+}
+
+#hotel_soleil_du_matin img, #coeur_de_leau img, #hotel_tout_bleu img
+{
+    width: 120px;
+    height: 110px;
+    margin-right: 20px;
+    margin-left: 5px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px 0px 5px 0px;
+}
+
+#hotel_soleil_du_matin, #coeur_de_leau, #hotel_tout_bleu
+{
+    font-size: 0.8em;
+    background-color: white;
+    border-radius: 10px;
+    width: 350px;
+    height: 120px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.float
+{
+    float: left;
+}
+
+
+
+#populaires i
+{
+    color: #0065FC;
+}
+
+#fleche
+{
+    top: 25px;
+    right: 20px;
+    position: absolute;
+    color: black;
+}
