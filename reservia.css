@@ -4,22 +4,23 @@
     src: url("polices/Raleway-Regular.ttf") format("truetype");
 }
 
+body
+{
+    font-family: "Raleway";
+}
+
 header
 {
     position: relative;
     display:flex;
     flex-direction: column;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 header img
 {
     width:95px;
-}
-
-p, h2
-{
-    margin: 0.5em;
-    font-family: "Raleway";
 }
 
 nav
@@ -61,8 +62,23 @@ a
 h1
 {
     font-size:1.3em;
+    margin-bottom: 0px;
 }
 
+#filtres, h1, h2, h3, em
+{
+    font-weight: bold;
+}
+
+h2
+{
+    margin-bottom: 10px;
+}
+#filtres p
+{
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
 #filtres ul
 {
     display: flex;
@@ -71,10 +87,16 @@ h1
 #filtres li
 {
     margin-right: 40px;
-    padding-right:10px;
+    padding-right: 18px;
     list-style-type: none;
     border: 2px solid #F2F2F2;
     border-radius: 20px;
+    font-size: 0.9em;
+}
+
+#filtres a
+{
+    margin-left: 15px;
 }
 
 #filtres i
@@ -90,6 +112,7 @@ h1
 {
     display:flex;
     vertical-align: middle;
+    margin-bottom: -20px;
 }
 
 #position
@@ -109,6 +132,10 @@ h1
     height: 30px;
 }
 
+#search
+{
+    margin-top: -20px;
+}
 #champ
 {
     height: 30px;
@@ -126,35 +153,37 @@ h1
 #hebergements
 {
     display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 #hebergements p, #hebergements h2
 {
-    margin-left: 25px;
-    margin-top: 20px;
+    margin-left: 9px;
+    margin-top: 8px;
+    margin-bottom: 0px;
 }
 
 #hebergement_marseille
 {
     background-color: #F2F2F2;
-    width: 750px;
+    width: 790px;
     height: 540px;
     border-radius: 10px;
-    margin-left: 15px;
 }
 
 #auberge_cannebiere img, #hotel_port img, #hotel_mouettes img, #hotel_mer img, #auberge_panier img, #hotel_amina img
 {
-    width: 200px;
-    height: 100px;
+    width: 215px;
+    height: 105px;
     border-radius: 10px 10px 0px 0px;
-    margin: 5px 5px 2px 5px;
+    margin: 3px 0px -3px 4px;
     
 }
 
 #auberge_cannebiere, #hotel_port, #hotel_mouettes, #hotel_mer, #auberge_panier, #hotel_amina
 {
-    width: 210px;
+    width: 260px;
     height: 200px;
     background-color: white;
     margin-right: 20px;
@@ -177,6 +206,7 @@ h1
 #hebergement_marseille i
 {
     color: #0065FC;
+    padding-bottom: 10px;
 }
 
 #populaires
@@ -185,9 +215,9 @@ h1
     width: 550px;
     height: 540px;
     border-radius: 10px;
-    margin-left: 35px;
-  
     position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
     
 }
 
@@ -230,4 +260,81 @@ h1
     right: 20px;
     position: absolute;
     color: black;
+}
+
+#activites
+{
+    display: flex;
+    width: 1370px;
+    height: 540px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right:60px;
+}
+
+#pomegues, #frioul, #notredame, #longchamp
+{
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    width: 310px;
+    height: 205px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#frioul, #longchamp
+{
+    margin-top: 30px;
+}
+
+#vieux_port, #calanques
+{
+    width: 310px;
+    height: 440px;
+    border-radius: 10px 10px 10px 10px; 
+    box-shadow: 6px 6px 6px #F2F2F2; 
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#vieux_port img, #calanques img
+{
+    height: 400px;
+    width: 310px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#pomegues img, #frioul img, #notredame img, #longchamp img
+{
+    height: 155px;
+    width: 310px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    
+}
+
+footer li
+{
+    list-style-type: none;
+}
+
+#assistance
+{
+    flex-grow: 1;
+    
+}
+
+#nos_hebergements
+{
+    flex-grow: 1;
+}
+
+#a_propos
+{
+    flex-grow: 1;
+    margin-left: 100px;
 }
