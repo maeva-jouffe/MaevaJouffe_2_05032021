@@ -34,6 +34,7 @@ nav
 nav a
 {
     padding-top: 25px;
+    font-weight: bold;
 }
 
 nav a:hover
@@ -62,7 +63,13 @@ a
 h1
 {
     font-size:1.3em;
+    font-weight: bold;
     margin-bottom: 0px;
+}
+
+#hebergement_marseille h3, #activites h3
+{
+    margin-left: 10px;
 }
 
 #filtres, h1, h2, h3, em
@@ -70,10 +77,6 @@ h1
     font-weight: bold;
 }
 
-h2
-{
-    margin-bottom: 10px;
-}
 #filtres p
 {
     margin-bottom: 0px;
@@ -106,6 +109,12 @@ h2
     border-radius: 25px;
     height: 19px;
     color: #0065FC;
+}
+
+#filtres a:hover
+{
+    color: #0065FC;
+    font-size: 1.2em;
 }
 
 #filtres
@@ -157,11 +166,18 @@ h2
     margin-right: 60px;
 }
 
-#hebergements p, #hebergements h2
+#hebergements p
 {
     margin-left: 9px;
     margin-top: 8px;
     margin-bottom: 0px;
+}
+
+#hebergements h2
+{
+    margin-left: 9px;
+    margin-top: 17px;
+    margin-bottom: 14px;
 }
 
 #hebergement_marseille
@@ -190,6 +206,7 @@ h2
     margin-left: 20px;
     font-size: 0.8em;
     border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 9px gray; 
     
 }
 #ligne1_hebergement
@@ -201,6 +218,7 @@ h2
 #ligne2_hebergement
 {
     display: flex;
+    margin-bottom: 21px;
 }
 
 #hebergement_marseille i
@@ -239,7 +257,8 @@ h2
     width: 350px;
     height: 120px;
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 28px;
+    box-shadow: 1px 1px 9px gray; 
 }
 
 .float
@@ -275,7 +294,7 @@ h2
 #pomegues, #frioul, #notredame, #longchamp
 {
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 6px 6px 6px #F2F2F2;
+    box-shadow: 4px 3px 9px #F2F2F2; 
     width: 310px;
     height: 205px;
     border-radius: 10px 10px 10px 10px;
@@ -291,16 +310,21 @@ h2
     width: 310px;
     height: 440px;
     border-radius: 10px 10px 10px 10px; 
-    box-shadow: 6px 6px 6px #F2F2F2; 
+    box-shadow: 4px 3px 9px #F2F2F2; 
     margin-right: 30px;
     margin-left: 30px;
 }
 
+#ancre_activites
+{
+    margin-left: 63px;
+}
 #vieux_port img, #calanques img
 {
     height: 400px;
     width: 310px;
     border-radius: 10px 10px 0px 0px;
+    margin-bottom: -13px;
 }
 
 #pomegues img, #frioul img, #notredame img, #longchamp img
@@ -308,6 +332,7 @@ h2
     height: 155px;
     width: 310px;
     border-radius: 10px 10px 0px 0px;
+    margin-bottom: -8px;
 }
 
 footer
