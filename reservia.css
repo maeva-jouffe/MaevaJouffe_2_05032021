@@ -23,6 +23,8 @@ header img
     width:95px;
 }
 
+
+
 nav
 {
     display:flex;
@@ -46,6 +48,7 @@ nav a:hover
 nav ul
 {
     display: flex;
+    padding-right: 83px;
 }
 
 nav li
@@ -194,7 +197,7 @@ h1
     height: 105px;
     border-radius: 10px 10px 0px 0px;
     margin: 3px 0px -3px 4px;
-    
+    object-fit: cover;
 }
 
 #auberge_cannebiere, #hotel_port, #hotel_mouettes, #hotel_mer, #auberge_panier, #hotel_amina
@@ -236,7 +239,11 @@ h1
     position: relative;
     margin-left: 60px;
     margin-right: 60px;
-    
+}
+
+#populaires h3
+{
+    padding-top: 13px;
 }
 
 #hotel_soleil_du_matin img, #coeur_de_leau img, #hotel_tout_bleu img
@@ -247,6 +254,7 @@ h1
     margin-left: 5px;
     border-radius: 10px 0px 0px 10px;
     padding: 5px 0px 5px 0px;
+    object-fit: cover;
 }
 
 #hotel_soleil_du_matin, #coeur_de_leau, #hotel_tout_bleu
@@ -325,6 +333,7 @@ h1
     width: 310px;
     border-radius: 10px 10px 0px 0px;
     margin-bottom: -13px;
+    object-fit: cover;
 }
 
 #pomegues img, #frioul img, #notredame img, #longchamp img
@@ -333,6 +342,7 @@ h1
     width: 310px;
     border-radius: 10px 10px 0px 0px;
     margin-bottom: -8px;
+    object-fit: cover;
 }
 
 footer
@@ -362,4 +372,13 @@ footer li
 {
     flex-grow: 1;
     margin-left: 100px;
+}
+
+#inscrire
+{
+    right: 33px;
+    top: 44px;
+    position:absolute;
+    color: #0065FC;
+    font-weight: bold;
 }
