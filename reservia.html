@@ -22,9 +22,13 @@
                 
 
                 <div id="search">
-                    <form method ="post" action="#">
-                        <p><i class="fas fa-map-marker-alt" id="position"></i><input type="search" placeholder="Marseille, France" id="champ"/><input type="submit" value="Rechercher" id="rechercher"/></p>
+                    <form method ="post" action="#" class="search_desktop">
+                        <p><i class="fas fa-map-marker-alt" id="position"></i><input type="search" placeholder="Marseille, France" class="champ"/><input type="submit" value="Rechercher" class="rechercher"/></p>
                     </form>
+                    <form method ="post" action="#" class="search_max600px">
+                        <p><i class="fas fa-map-marker-alt" id="position"></i><input type="search" placeholder="Marseille, France" class="champ"/><button type="submit" class="button"><i class="fas fa-search"></i></button></p>
+                    </form>
+               
                 </div>
     
                 <div id="filtres">
@@ -37,7 +41,7 @@
                     </ul>
                 </div>
     
-                    <p><i class="fas fa-info" id="info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <p class="information"><i class="fas fa-info" id="info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
                     
                     <p><a href="#" id="inscrire">S'inscrire</a></p> 
