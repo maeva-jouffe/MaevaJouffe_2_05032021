@@ -382,3 +382,57 @@ footer li
     color: #0065FC;
     font-weight: bold;
 }
+
+@media screen and (max-width: 600px)
+{
+    #filtres ul
+    {
+        flex-direction: column;
+    }
+
+    nav
+    {
+        position:relative;
+    }
+
+    nav ul
+    {
+        margin: -1em 0em 3em 0em;
+    }
+
+    nav a
+    {
+        padding-right: 1em;
+        padding-left: 0.8em;
+        padding-bottom: 0.8em;
+        font-size: 1.4em;
+    }
+
+    nav a:hover
+    {
+        color:#0065FC;
+        border-bottom: 3px solid #0065FC ;
+        border-top: none;
+    }
+
+    #inscrire
+    {
+        top: 2.4em;
+        left: 15em;
+        font-size: 1.4em;
+    }
+
+    header img
+    {
+        width: 11em;
+    }
+
+    h1
+    {
+        font-size: 2em;
+    }
+
+    
+
+    
+}
