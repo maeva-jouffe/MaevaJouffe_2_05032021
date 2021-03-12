@@ -433,6 +433,7 @@ footer li
     #filtres ul
     {
         flex-direction: column;
+        margin-top: -1em;
     }
 
     #filtres li
@@ -485,14 +486,14 @@ footer li
 
     h1
     {
-        font-size: 2em;
+        font-size: 1.6em;
     }
 
     h1+p
     {
         margin-top: 0.9em;
         margin-bottom: 1.9em;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .search_max600px
@@ -522,7 +523,7 @@ footer li
     #fleche
     {
         top: 0.9em;
-        right: 6.2em;
+        right: 5.2em;
         font-size: 1.4em;
     }
 
@@ -533,6 +534,7 @@ footer li
     margin-right: 20px;
     margin-left: 5px;
     padding: 5px 0px 5px 0px;
+    border-radius: 1.5em 0em 0em 1.5em;
     }
 
     #hotel_soleil_du_matin, #coeur_de_leau, #hotel_tout_bleu
@@ -542,6 +544,7 @@ footer li
     height: 13.7em;
     margin-left: 1.9em;
     margin-top: 28px;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
     }
 
     #populaires p
@@ -588,8 +591,12 @@ footer li
 
     #ligne2_hebergement
     {
-        flex-direction: column;
-        
+        flex-direction: column;   
+    }
+
+    #filtres p
+    {
+        margin-top: 1.1em;
     }
 
     #auberge_cannebiere img, #hotel_port img, #hotel_mouettes img, #hotel_mer img, #auberge_panier img, #hotel_amina img
@@ -597,19 +604,83 @@ footer li
     width: 35em;
     height: 13em;
     margin: 3px 0px -12px 4px;
+    border-radius: 1.5em 1.5em 0em 0em;
     }
 
     #auberge_cannebiere, #hotel_port, #hotel_mouettes, #hotel_mer, #auberge_panier, #hotel_amina
     {
-    height: 21em;
+    height: 20.4em;
     margin-left: -0.1em;
     min-width: 35.7em;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    margin-bottom: 2.1em;
+    box-shadow: 4px 7px 6px #F2F2F2;
+    }
+
+    #hebergement_marseille p
+    {
+        font-size: 1.1em;
+        margin-top: -0.9em;
+        margin-bottom: 1.6em;
+    }
+
+    #hebergement_marseille h3
+    {
+        font-size: 1.4em;
+    }
 
     #activites
     {
         flex-direction: column;
-        margin-top: 51em;
+        margin-top: 2em;
     }
+
+    #activites h3
+    {
+        font-size: 1.2em;
+    }
+
+    #ancre_activites
+    {
+        margin-top: 55.8em;
+        margin-left: 0.8em;
+    }
+
+    #vieux_port img, #calanques img, #pomegues img, #frioul img, #notredame img, #longchamp img
+    {
+    width: 28em;
+    height: 13em;
+    margin: 3px 0px -12px 4px;
+    border-radius: 1.5em 1.5em 0em 0em;
+    }
+
+    #vieux_port, #calanques, #pomegues, #frioul, #notredame, #longchamp
+    {
+    height: 16.4em;
+    margin-left: -1.1em;
+    min-width: 28.55em;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    margin-bottom: 2.1em;
+    box-shadow: 4px 7px 6px #F2F2F2;
+    }
+
+    footer
+    {
+        margin: 78.3em -3em -1em -1em;
+        padding-left: 2.7em;
+        flex-direction: column;
+    }
+
+    footer p
+    {
+        margin-bottom: 0.5em;
+    }
+
+    #a_propos
+    {
+        margin-left: 0.1em;
+    }
+
 
     
 
