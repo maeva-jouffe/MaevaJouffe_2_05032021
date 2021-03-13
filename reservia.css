@@ -294,14 +294,14 @@ h1
     box-shadow: 1px 1px 9px gray; 
 }
 
+#hotel_soleil_du_matin i, #coeur_de_leau i, #hotel_tout_bleu i
+{
+    color: #0065FC;
+}
+
 .float
 {
     float: left;
-}
-
-#populaires i
-{
-    color: #0065FC;
 }
 
 #fleche
@@ -403,6 +403,11 @@ footer li
     position:absolute;
     color: #0065FC;
     font-weight: bold;
+}
+
+.fas fa-star unchecked
+{
+    color: #F2F2F2;
 }
 
 @media screen and (max-width: 768px)
@@ -678,18 +683,10 @@ footer li
     {
         margin-left: 0.1em;
     }
-    h1
-    {
-        color: green;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 990px)
 {
-    h1
-    {
-        color: red;
-    }
     #filtres li
     {
         padding-right: 1em;
