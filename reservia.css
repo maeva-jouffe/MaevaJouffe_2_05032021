@@ -6,15 +6,14 @@
 body{
     font-family: "Raleway";
     width: 100%;
-    margin: 0;
 }
 
 header{
     position: relative;
     display:flex;
     flex-direction: column;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 header img{
@@ -60,7 +59,9 @@ h1{
 }
 
 #hebergement_marseille h3, #activites h3{
-    margin-left: 10px;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+    margin-bottom: 0;
 }
 
 #filtres, h1, h2, h3, em{
@@ -74,11 +75,12 @@ h1{
 
 #filtres ul{
     display: flex;
+    flex-wrap: wrap;
 }
 
 #filtres li{
-    margin-right: 40px;
-    padding-right: 18px;
+    margin-right: 2em;
+    padding-right: 4em;
     list-style-type: none;
     border: 2px solid #F2F2F2;
     border-radius: 20px;
@@ -120,21 +122,23 @@ i.fas.fa-star.gris::before{
 #filtres{
     display:flex;
     vertical-align: middle;
-    margin-bottom: -20px;
+    margin-bottom: -1em;
+    margin-top: -7.5em;
 }
 
 #position{
     background-color: #F2F2F2;
-    border: 7px solid #F2F2F2;
+    border: 11px solid #F2F2F2;
     border-radius: 7px 0px 0px 7px;
-    height: 19px;
+    height: 1.22em;
 }
 
 .rechercher{
     background-color: #0065FC;
     color: white;
-    border-radius: 0px 7px 7px 0px;
-    height: 30px;
+    border-radius: 0px 11px 11px 0px;
+    height: 3em;
+    width: 7em;
 }
 
 .button{ 
@@ -149,14 +153,10 @@ i.fas.fa-star.gris::before{
     visibility: hidden;
 }
 
-#search{
-    margin-top: -20px;
-    margin-bottom: -51px;
-}
-
 .champ{
-    height: 30px;
-    width: 200px;
+    height: 3em;
+    width: 17em;
+    font-weight: bold;
 }
 
 #info{
@@ -169,56 +169,61 @@ i.fas.fa-star.gris::before{
 
 #hebergements{
     display: flex;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-top: -1.5em;
+    
 }
 
 #hebergements p{
-    margin-left: 9px;
-    margin-top: 8px;
-    margin-bottom: 0px;
+    margin-left: 0.5em;
+    margin-top: 0.4em;
+    margin-bottom: -0.2em;
 }
 
-#hebergements h2{
-    margin-left: 9px;
-    margin-top: 17px;
-    margin-bottom: 14px;
+
+#hebergement_marseille h2{
+    width: 90%;
+    margin-left: -0.6em;
+    margin-bottom: 0;
+    font-size: 1.3em;
+}
+
+#populaires h2{
+    font-size: 1.3em;
+    margin-left: -4em;
 }
 
 #hebergement_marseille{
     background-color: #F2F2F2;
-    width: 790px;
-    height: 540px;
+    max-height: 86em;
+    width: 85%;
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 2;
+    flex-shrink: 2;
+    margin: 0 1em 0 4em;
+
 }
 
 #auberge_cannebiere img, #hotel_port img, #hotel_mouettes img, #hotel_mer img, #auberge_panier img, #hotel_amina img{
-    width: 215px;
+    width: calc(100% - 6px);
+    
     height: 105px;
     border-radius: 10px 10px 0px 0px;
-    margin: 3px 0px -3px 4px;
+    margin: 3px 0px -14px 4px;
     object-fit: cover;
 }
 
 #auberge_cannebiere, #hotel_port, #hotel_mouettes, #hotel_mer, #auberge_panier, #hotel_amina{
-    width: 260px;
-    height: 200px;
+    width: 25%;
+    min-width: 13em;
+    height: 14.6em;
     background-color: white;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 1em 2em 1em 2em;
     font-size: 0.8em;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 1px 1px 9px gray;   
-}
-
-#ligne1_hebergement{
-    display: flex;
-    margin-bottom: 20px;
-}
-
-#ligne2_hebergement{
-    display: flex;
-    margin-bottom: 21px;
 }
 
 #hebergement_marseille i{
@@ -226,27 +231,32 @@ i.fas.fa-star.gris::before{
     padding-bottom: 10px;
 }
 
-#populaires{
-    background-color: #F2F2F2;
-    width: 550px;
-    height: 540px;
-    border-radius: 10px;
-    position: relative;
-    margin-left: 60px;
-    margin-right: 60px;
+.afficher{
+    width: 60%;
 }
 
-#populaires h3{
-    padding-top: 13px;
+#populaires{
+    background-color: #F2F2F2;
+    height: 540px;
+    width: 28%;
+    min-width: 22em;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 4em 0 1em;
+    align-items: center;
+    
 }
 
 #hotel_soleil_du_matin img, #coeur_de_leau img, #hotel_tout_bleu img{
     width: 120px;
-    height: 110px;
+    height: 114px;
     margin-right: 20px;
-    margin-left: 5px;
     border-radius: 10px 0px 0px 10px;
-    padding: 5px 0px 5px 0px;
+    padding: 3px 0px 0px 3px;
     object-fit: cover;
 }
 
@@ -254,10 +264,11 @@ i.fas.fa-star.gris::before{
     font-size: 0.8em;
     background-color: white;
     border-radius: 10px;
-    width: 350px;
+    width: 73%;
+    min-width: 21em;
     height: 120px;
-    margin-left: 20px;
-    margin-top: 28px;
+    margin-bottom: 2.5em;
+    margin-top: 0.6em;
     box-shadow: 1px 1px 9px gray; 
 }
 
@@ -279,16 +290,14 @@ i.fas.fa-star.gris::before{
 #activites{
     display: flex;
     height: 540px;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right:60px;
+    margin: 1em 4em 0em 4em;
 }
 
 #pomegues, #frioul, #notredame, #longchamp{
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 4px 3px 9px #F2F2F2; 
-    width: 310px;
-    height: 205px;
+    box-shadow: 4px 6px 9px #f2f2f2; 
+    width: 100%;
+    height: 12.8em;
 }
 
 #frioul, #longchamp{
@@ -296,11 +305,16 @@ i.fas.fa-star.gris::before{
 }
 
 #vieux_port, #calanques{
-    width: 310px;
-    height: 440px;
+    width: 50%;
+    height: 27.5em;
+    max-height: none;
     border-radius: 10px 10px 10px 10px; 
-    box-shadow: 4px 3px 9px #F2F2F2; 
+    box-shadow: 4px 6px 9px #f2f2f2; 
     margin-right: 30px;
+    
+}
+
+#calanques{
     margin-left: 30px;
 }
 
@@ -309,25 +323,27 @@ i.fas.fa-star.gris::before{
 }
 
 #vieux_port img, #calanques img{
-    height: 400px;
-    width: 310px;
+    height: 25.1em;
+    width: calc(100%);
     border-radius: 10px 10px 0px 0px;
     margin-bottom: -13px;
     object-fit: cover;
 }
 
 #pomegues img, #frioul img, #notredame img, #longchamp img{
-    height: 155px;
-    width: 310px;
+    height: 10.4em;
+    width: calc(100%);
     border-radius: 10px 10px 0px 0px;
-    margin-bottom: -8px;
+    margin-bottom: -0.9em;
     object-fit: cover;
 }
 
 footer
 {
     background-color: #F2F2F2;
-    display: flex;  
+    display: flex;
+    margin: -2.8em 0em -1em -1em;
+    padding-top: 1em;
 }
 
 footer li{
