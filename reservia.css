@@ -3,10 +3,6 @@
     src: url("polices/Raleway-Regular.ttf") format("truetype");
 }
 
-.gris{
-    color: #F2F2F2;
-}
-
 body{
     font-family: "Raleway";
     width: 100%;
@@ -97,6 +93,9 @@ h1{
     padding-top: 5px;
 }
 
+i.fas.fa-star.gris::before{
+    color: #F2F2F2;
+}
 
 
 #filtres i{
@@ -141,9 +140,9 @@ h1{
 .button{ 
     background-color: #0065FC;
     color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 0px 7px 7px 0px;
+    height: 8em;
+    width: 8em;
+    border-radius: 34px 34px 34px 34px;
 }
 
 .search_max600px{
@@ -357,13 +356,25 @@ footer li{
     font-weight: bold;
 }
 
-@media screen and (max-width: 668px)
+@media screen and (max-width: 980px)
 {
     #info{
         float: left;
     }
+
     p{
         color: red;
+    }
+
+    .champ{
+        height: 8em;
+        width: 59em;
+        border: 3px solid #F2F2F2;
+        margin-right: -2em;
+    }
+
+    i.fas.fa-search::before{
+        font-size: 3.4em;
     }
 
     .information{
@@ -380,7 +391,7 @@ footer li{
     }
 
     header img{
-        width: 39%;
+        width: 31%;
         margin-top: 3%;
     }
 
@@ -403,14 +414,20 @@ footer li{
     }
 
     nav ul{
-        margin: -1em 0em 3em 0em;
+        margin: 0em 0em 3em 0em;
+        font-size: 1.9em;
     }
 
     nav a{
-        padding-right: 1em;
-        padding-left: 0.8em;
+        padding-right: 2em;
+        padding-left: 2em;
         padding-bottom: 0.8em;
         font-size: 1.4em;
+        border-bottom: 0.1em solid #F2F2F2;
+    }
+
+    nav li{
+        margin-right: 0;
     }
 
     nav a:hover{
@@ -421,19 +438,17 @@ footer li{
 
     #inscrire{
         top: 2.4em;
-        left: 15em;
-        font-size: 1.4em;
+        left: 16em;
+        font-size: 2.7em;
     }
 
-   
-
     h1{
-        font-size: 1.6em;
+        font-size: 3.9em;
     }
 
     h1+p{
         margin-top: 0.9em;
-        margin-bottom: 1.9em;
+        margin-bottom: 0.9em;
         font-size: 1.2em;
     }
 
@@ -600,7 +615,7 @@ footer li{
     }
 }
 
-@media screen and (min-width: 668px) and (max-width: 1024px)
+@media screen and (min-width: 981px) and (max-width: 1024px)
 {
     #filtres li{
         padding-right: 1em;
