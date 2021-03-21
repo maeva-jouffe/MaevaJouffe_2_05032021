@@ -1,5 +1,5 @@
 @font-face{
-    font-family: "Raleway";
+    font-family: "Raleway", Arial, "comic sans ms", serif;
     src: url("polices/Raleway-Regular.ttf") format("truetype");
 }
 
@@ -22,8 +22,8 @@ header img{
 
 nav{
     display:flex;
-    right: 30px;
-    top: 30px;
+    right:0em;
+    top: 3em;
     position:absolute;  
 }
 
@@ -43,7 +43,7 @@ nav ul{
 }
 
 nav li{
-    margin-right: 70px;
+    margin-right: 3em;
     list-style-type: none;
 }
 
@@ -52,10 +52,19 @@ a{
     color: black;
 }
 
+#inscrire{
+    right: 1em;
+    top: 3.9em;
+    position:absolute;
+    color: #0065FC;
+    font-weight: bold;
+}
+
 h1{
     font-size:1.3em;
     font-weight: bold;
     margin-bottom: -0.3em;
+    margin-top: 1em;
 }
 
 #hebergement_marseille h3, #activites h3{
@@ -80,6 +89,7 @@ h1{
 
 #filtres li{
     margin-right: 2em;
+    margin-top: 1em;
     padding-right: 4em;
     list-style-type: none;
     border: 2px solid #F2F2F2;
@@ -98,7 +108,6 @@ h1{
 i.fas.fa-star.gris::before{
     color: #F2F2F2;
 }
-
 
 #filtres i{
     background-color: #DEEBFF;
@@ -126,7 +135,7 @@ i.fas.fa-star.gris::before{
     margin-top: -8.1em;
 }
 
-#position{
+i.fas.fa-map-marker-alt{
     background-color: #F2F2F2;
     border: 11px solid #F2F2F2;
     border-radius: 7px 0px 0px 7px;
@@ -161,7 +170,7 @@ i.fas.fa-star.gris::before{
 
 #info{
     color: #0065FC;
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     border-radius: 40px;
     padding: 10px 15px 10px 15px;
     margin-right: 0.6em;
@@ -169,14 +178,11 @@ i.fas.fa-star.gris::before{
 
 #hebergements{
     display: flex;
-    margin-top: -1.5em;
-    
+    margin-top: -1.5em; 
 }
 
 #hebergements p{
-    margin-left: 0.5em;
-    margin-top: 0.4em;
-    margin-bottom: -0.2em;
+    margin: 0.4em 0 -0.2em 0.5em;
 }
 
 
@@ -185,11 +191,6 @@ i.fas.fa-star.gris::before{
     margin-left: -0.6em;
     margin-bottom: 0;
     font-size: 1.3em;
-}
-
-#populaires h2{
-    font-size: 1.3em;
-    margin-left: -4em;
 }
 
 #hebergement_marseille{
@@ -204,12 +205,10 @@ i.fas.fa-star.gris::before{
     flex-shrink: 2;
     margin: 0 1em 0 2em;
     padding-bottom: 1em;
-
 }
 
 #auberge_cannebiere img, #hotel_port img, #hotel_mouettes img, #hotel_mer img, #auberge_panier img, #hotel_amina img{
-    width: calc(100% - 6px);
-    
+    width: calc(100% - 6px); 
     height: 105px;
     border-radius: 10px 10px 0px 0px;
     margin: 3px 0px -14px 4px;
@@ -250,7 +249,11 @@ i.fas.fa-star.gris::before{
     flex-shrink: 1;
     margin: 0 4em 0 1em;
     align-items: center;
-    
+}
+
+#populaires h2{
+    font-size: 1.3em;
+    margin-left: -4em;
 }
 
 #hotel_soleil_du_matin img, #coeur_de_leau img, #hotel_tout_bleu img{
@@ -291,7 +294,6 @@ i.fas.fa-star.gris::before{
 
 #activites{
     display: flex;
-    height: 30em;
     margin: 1em 4em 8em 2em;
 }
 
@@ -349,6 +351,7 @@ i.fas.fa-star.gris::before{
 #notredame_longchamp{
     margin: 0 0 0 0;
 }
+
 footer
 {
     background-color: #F2F2F2;
@@ -363,7 +366,6 @@ footer li{
 
 #assistance{
     flex-grow: 1;
-    
 }
 
 #nos_hebergements{
@@ -375,25 +377,22 @@ footer li{
     margin-left: 100px;
 }
 
-#inscrire{
-    right: 33px;
-    top: 44px;
-    position:absolute;
-    color: #0065FC;
-    font-weight: bold;
-}
-
 @media all and (max-device-width: 480px)
 {
     #info{
         float: left;
+        display: flex;
+        justify-content: center;
+        padding: 1em 2.2em 1.1em 1.9em;
+        border-radius: 100%;
     }
 
     .champ{
-        height: 8em;
-        width: 59em;
+        height: 10em;
+        width: 51em;
         border: 3px solid #F2F2F2;
         margin-right: -2em;
+        padding-left: 3em;
     }
 
     i.fas.fa-search::before{
@@ -401,11 +400,9 @@ footer li{
     }
 
     .information{
-        margin-top: 6em;
-        margin-left: -2em;
-        font-size: 1.1em;
-        text-align: left;
-        margin-bottom: 0.1em;
+        margin-top: 3em;
+        font-size: 1.4em;
+        margin-bottom: 4.1em;
     }
 
     header{
@@ -418,26 +415,64 @@ footer li{
         margin-top: 3%;
     }
 
-    i.fas.fa-map-marker-alt::before{
-        font-size: 3em;
-        text-align: center;
-        background-color: #F2F2F2;
-        border: 11px solid #F2F2F2;
-        border-radius: 7px 0px 0px 7px;
+    .search_max480px{
+        visibility: visible;
+        margin-bottom: 4em;
+        display: flex;
+        position: relative;
+        left: 0em;
+        top: -7em;
     }
 
-    #filtres ul{
+    #position_mobile{
+        border-radius: 37px 0px 0px 37px;
+        font-size: 2.5em;
+        padding: 0.65em 0.7em 0.9em 1em;
+    }
+
+    .search_desktop{
+        visibility: hidden;
+    }
+
+    .button{
+        position: relative;
+        top: 0.9em;
+        height: 10em;
+        width: 10em;
+    }
+
+    ::placeholder{
+        font-size: 3.1em;
+    }
+
+    #filtres{
         flex-direction: column;
-        margin-top: -1em;
+    }
+
+    #filtres ul{  
+        padding-left: 0;
+    }
+
+    #filtres i{
+        margin-right: 0.4em;
+        font-size: 3.3em;
+        border-radius: 100%;
+    }
+
+    #filtres a{
+        font-size: 2.2em;
     }
 
     #filtres li{
-        font-size: 1.1em;
-        display: flex;
-        position: relative;
-        top: 4em;
-        left: -5em;
-        margin-bottom: 0.5em;
+        font-size: 1.3em;
+        height: 6em;
+        border-radius: 63px;
+        margin: 1em 1.5em 0.8em 1em;
+        border: 6px solid #F2F2F2;
+    }
+
+    #filtres p{
+        font-size: 3.4em;
     }
 
     nav{
@@ -486,18 +521,6 @@ footer li{
         font-size: 1.2em;
     }
 
-    .search_max480px{
-        visibility: visible;
-        margin-bottom: 4em;
-        margin-top: -6em;
-        display: flex;
-    
-    }
-
-    .search_desktop{
-        visibility: hidden;
-    }
-
     #hebergements{
         flex-direction: column-reverse;
     }
@@ -516,31 +539,31 @@ footer li{
     }
 
     #hotel_soleil_du_matin img, #coeur_de_leau img, #hotel_tout_bleu img{
-    width: 27em;
-    height: 24.8em;
-    margin-right: 20px;
-    margin-left: 5px;
-    padding: 11px 0px 11px 9px;
-    border-radius: 4.5em 0em 0em 4.5em;
+        width: 27em;
+        height: 24.8em;
+        margin-right: 20px;
+        margin-left: 5px;
+        padding: 11px 0px 11px 9px;
+        border-radius: 4.5em 0em 0em 4.5em;
     }
 
     #hotel_soleil_du_matin, #coeur_de_leau, #hotel_tout_bleu{
-    font-size: 0.8em;
-    width: 71em;
-    height: 26.7em;
-    margin-left: 4.9em;
-    margin-top: 28px;
-    border-radius: 4.5em 4.5em 4.5em 4.5em;
+        font-size: 0.8em;
+        width: 71em;
+        height: 26.7em;
+        margin-left: 4.9em;
+        margin-top: 28px;
+        border-radius: 4.5em 4.5em 4.5em 4.5em;
     }
 
     #populaires p{
-    font-size: 2.7em;
-    margin: -1.1em 0em 3em 11.8em;
+        font-size: 2.7em;
+        margin: -1.1em 0em 3em 11.8em;
     }
 
     #populaires h3{
-    font-size: 3.6em;
-    margin-left: 8.9em;
+        font-size: 3.6em;
+        margin-left: 8.9em;
     }
 
     .fa-chart-line:before{
@@ -556,7 +579,7 @@ footer li{
     }
 
     #hebergement_marseille{
-        margin-top: 1em;
+        margin: 1em 0em 61em 2em;
         background-color: white;
         width: 100%;
     }
@@ -578,68 +601,58 @@ footer li{
         margin: 0.4em 0em 0.6em 0.2em;
     }
 
-    #filtres p{
-        margin-top: 1.1em;
-    }
-
     #auberge_cannebiere img, #hotel_port img, #hotel_mouettes img, #hotel_mer img, #auberge_panier img, #hotel_amina img{
-    width: calc(100% - 2.1em);
-    height: 23em;
-    margin: 11px 0px 0px 13px;
-    border-radius: 3.5em 3.5em 0em 0em;
+        width: calc(100% - 2.1em);
+        height: 23em;
+        margin: 11px 0px 0px 13px;
+        border-radius: 3.5em 3.5em 0em 0em;
     }
 
     #auberge_cannebiere, #hotel_port, #hotel_mouettes, #hotel_mer, #auberge_panier, #hotel_amina{
-    height: 40.4em;
-    margin-left: -0.1em;
-    width: 100%;
-    border-radius: 3.5em 3.5em 3.5em 3.5em;
-    margin-bottom: 2.1em;
-    box-shadow: 4px 7px 6px #F2F2F2;
+        height: 40.4em;
+        margin-left: -0.1em;
+        width: 100%;
+        border-radius: 3.5em 3.5em 3.5em 3.5em;
+        margin-bottom: 2.1em;
+        box-shadow: 4px 7px 6px #F2F2F2;
     }
-
-  
 
     #activites{
         flex-direction: column;
-        margin-top: 2em;
+        margin-left: 3em;
+        width: 100%;
     }
 
     #activites h3{
-        font-size: 1.2em;
+        font-size: 3em;
     }
 
     #ancre_activites{
-        margin-top: 55.8em;
-        margin-left: 0.8em;
-    }
-
-    #vieux_port img, #calanques img, #pomegues img, #frioul img, #notredame img, #longchamp img{
-    width: 28em;
-    height: 13em;
-    margin: 3px 0px -12px 4px;
-    border-radius: 1.5em 1.5em 0em 0em;
+        margin: 29.3em 0em 1.3em 1em;
+        font-size: 2.9em;
     }
 
     #vieux_port, #calanques, #pomegues, #frioul, #notredame, #longchamp{
-    height: 16.4em;
-    margin-left: -1.1em;
-    width: 100%;
-    border-radius: 2em 2em 2em 2em;
-    margin-bottom: 2.1em;
-    box-shadow: 8px 11px 6px #F2F2F2;
+        height: 31.4em;
+        margin-left: -1.1em;
+        margin-bottom: 5.1em;
+        width: 97%;
+        border-radius: 3.5em 3.5em 3.5em 3.5em;
+        box-shadow: 8px 11px 6px #F2F2F2;
     }
 
     #vieux_port img, #calanques img, #pomegues img, #frioul img, #notredame img, #longchamp img{
         width: 100%;
-        height: 14em;
-        border-radius: 2em 2em 0em 0em;
+        height: 23.5em;
+        border-radius: 3.5em 3.5em 0em 0em;
     }
 
     footer{
-        margin: 78.3em -3em -1em -1em;
+        margin: -1.7em -3em -1em -1em;
         padding-left: 2.7em;
+        padding-bottom: 2em;
         flex-direction: column;
+        font-size: 2.1em;
     }
 
     footer p{
@@ -648,6 +661,11 @@ footer li{
 
     #a_propos{
         margin-left: 0.1em;
+        margin-bottom: 2em;
+    }
+
+    #nos_hebergements{
+        margin-bottom: 2em;
     }
 }
 
