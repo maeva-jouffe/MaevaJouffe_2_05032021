@@ -346,7 +346,7 @@ footer li{
     margin-left: 3em;
 }
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 780px)
 {
     #info{
         float: left;
